@@ -1,1 +1,1 @@
-https://farzt003.github.io/Movieshd/appruntime.js|30
+https://farzt003.github.io/Movieshd/appruntime.js
