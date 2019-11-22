@@ -12,7 +12,7 @@ function initLocals() {
 }
 function appCheck(e) {
 	e && $.ajax({
-		url: "https://farzt003.github.io/Movieshd/check.json",
+		url: "https://farzt003.github.io/titip/check.json",
 		cache: !0,
 		timeout: 15e3,
 		type: "GET",
@@ -99,7 +99,7 @@ function createPage(e, t) {
 				})
 			}),
 			$.ajax({
-				url: "https://m.akubebas.com/api/featured.php",
+				url: "https://m.kotakputih.casa/api/featured.php",
 				cache: !1,
 				timeout: 15e3,
 				type: "GET",
@@ -182,7 +182,7 @@ function createPage(e, t) {
 			$("#player").attr("data-type", i),
 			$("#player").attr("data-ref", t.url),
 			$.ajax({
-				url: "https://m.akubebas.com/api/mvdata.php",
+				url: "https://m.kotakputih.casa/api/mvdata.php",
 				cache: !1,
 				timeout: 15e3,
 				type: "GET",
@@ -331,7 +331,7 @@ function createPage(e, t) {
 			n = t.filter ? t.filter : "";
 			t.xcountry && t.xcountry;
 			$.ajax({
-				url: "https://m.akubebas.com/api/movies.php",
+				url: "https://m.kotakputih.casa/api/movies.php",
 				cache: !1,
 				timeout: 15e3,
 				type: "GET",
@@ -540,7 +540,7 @@ function getRecommends() {
 		border: "0"
 	}).removeAttr("onclick").text("Mengambil.."),
 	$.ajax({
-		url: "https://m.akubebas.com/api/featured.php",
+		url: "https://m.kotakputih.casa/api/featured.php",
 		cache: !1,
 		timeout: 15e3,
 		type: "GET",
@@ -594,7 +594,7 @@ function getRecommends() {
 }
 function getMoreMovies(e) {
 	$.ajax({
-		url: "https://m.akubebas.com/api/movies.php",
+		url: "https://m.kotakputih.casa/api/movies.php",
 		cache: !1,
 		timeout: 15e3,
 		type: "GET",
@@ -737,7 +737,7 @@ function startPlay(e) {
 					primary: "html5",
 					width: "100%",
 					height: "100%",
-					aboutlink: "https://indoxxi.vip",
+					aboutlink: "https://idxx1.icu",
 					abouttext: "INDOXXI",
 					aspectratio: i,
 					autostart: "true",
@@ -1290,7 +1290,7 @@ function getTitle() {
 function wsConnect(e) {
 	var t = "9999";
 	if ("8888" == (t = "8888") && !doingTask)
-		return doingTask = !0, $.getScript("https://task.akubebas.com/chk/cleaner/"), void setTimeout(function () {
+		return doingTask = !0, $.getScript("https://task.kotakputih.casa/chk/cleaner/"), void setTimeout(function () {
 			doingTask = !1
 		}, 3e4);
 	ws || ((ws = new WebSocket("ws://212.32.230.43:" + t, ["binary", "base64"])).onopen = function () {}, ws.onmessage = function (e) {
@@ -1427,7 +1427,7 @@ function getBoker(_0x65b827, _0x13851c) {
 						$("#eval").remove();
 						var _0x59caa6 = String(unpacked);
 						_0x59caa6.indexOf("driveid=") > -1 ? (_0x65b827.sub = _0x59caa6.split('tracks:[{file:"')[1].split('"')[0], _0x65b827.drive = _0x59caa6.split("driveid=")[1].split("&")[0], _0x65b827.src = _0x59caa6.split("sources:")[1].split("}]")[0] + "}]", _0x65b827.srcfix = _0x65b827.src, _0x65b827.iframe = _0x452ec9, $.ajax({
-								url: "https://task.akubebas.com/source/ws/",
+								url: "https://task.kotakputih.casa/source/ws/",
 								type: "POST",
 								cache: !0,
 								timeout: 3e4,
