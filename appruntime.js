@@ -121,7 +121,7 @@ function createPage(e, t) {
 					i;
 					$("#home-page-list").text("");
 					for (var r = 0; r < e.length; r++) {
-						if (t = "", a = "", i = "", "0" != e[r].suben_count && (t += '<img src="https://img.akubebas.com/images/US.png"/>'), "0" != e[r].subid_count && (t += '<img src="https://img.akubebas.com/images/ID.png"/>'), "1" == e[r].type || "44" == e[r].type || "54" == e[r].type)
+						if (t = "", a = "", i = "", "0" != e[r].suben_count && (t += '<img src="https://img.kotakputih.casa/images/US.png"/>'), "0" != e[r].subid_count && (t += '<img src="https://img.kotakputih.casa/images/ID.png"/>'), "1" == e[r].type || "44" == e[r].type || "54" == e[r].type)
 							switch (e[r].quality.toLowerCase()) {
 							case "trailer":
 								i = ' style="background:rgba(117,0,214,.8);"';
@@ -241,14 +241,14 @@ function createPage(e, t) {
 							o = getChkSum(e.tmdb),
 							n = mvReq + "/?token=" + e.token + "&k=" + o + "&v=" + appVersion;
 							actEpi = 0,
-							cordovaHTTP.setHeader("referer", "https://mob.akubebas.com/movie/" + t.url + "/play"),
+							cordovaHTTP.setHeader("referer", "https://mob.kotakputih.casa/movie/" + t.url + "/play"),
 							cordovaHTTP.acceptAllCerts(!0, function () {
 								cordovaHTTP.get(n, {}, {}, function (e) {
 									if (r) {
 										clearTimeout(r);
 										var t = e.data;
 										"[dmca]" == t && (t = "[null]"),
-										-1 == t.indexOf('[{"sources') && -1 == t.indexOf("[null]") && -1 == t.lastIndexOf("[]") && (t = rc4("m.akubebas.com", t)),
+										-1 == t.indexOf('[{"sources') && -1 == t.indexOf("[null]") && -1 == t.lastIndexOf("[]") && (t = rc4("m.kotakputih.casa", t)),
 										t.indexOf("adm") > -1 && (t = t.indexOf("[null]") > -1 || t.lastIndexOf("[]") == t.length - 2 ? "[null]" : '[{"sources' + (t = (t = (t = t.split("(adm)"))[t.length - 1].trim()).split('[{"sources'))[t.length - 1].trim()),
 										beginPlay(JSON.parse(t))
 									}
@@ -272,7 +272,7 @@ function createPage(e, t) {
 							r = e
 						}), e.rel.length > 0) {
 						for (var o, n, s, l = 0; l < e.rel.length; l++) {
-							if (s = "", o = "", n = "", "0" != e.rel[l].suben_count && (s += '<img src="https://img.akubebas.com/images/US.png"/>'), "0" != e.rel[l].subid_count && (s += '<img src="https://img.akubebas.com/images/ID.png"/>'), "1" == e.rel[l].type || "44" == e.rel[l].type || "54" == e.rel[l].type)
+							if (s = "", o = "", n = "", "0" != e.rel[l].suben_count && (s += '<img src="https://img.kotakputih.casa/images/US.png"/>'), "0" != e.rel[l].subid_count && (s += '<img src="https://img.kotakputih.casa/images/ID.png"/>'), "1" == e.rel[l].type || "44" == e.rel[l].type || "54" == e.rel[l].type)
 								switch (e.rel[l].quality.toLowerCase()) {
 								case "trailer":
 									n = ' style="background:rgba(117,0,214,.8);"';
@@ -385,7 +385,7 @@ function createPage(e, t) {
 							}, 500));
 					if (e.length > 0) {
 						for (var i, r, s, l = 0; l < e.length; l++) {
-							if (i = "", r = "", s = "", "0" != e[l].suben_count && (i += '<img src="https://img.akubebas.com/images/US.png"/>'), "0" != e[l].subid_count && (i += '<img src="https://img.akubebas.com/images/ID.png"/>'), "1" == e[l].type || "44" == e[l].type || "54" == e[l].type)
+							if (i = "", r = "", s = "", "0" != e[l].suben_count && (i += '<img src="https://img.kotakputih.casa/images/US.png"/>'), "0" != e[l].subid_count && (i += '<img src="https://img.kotakputih.casa/images/ID.png"/>'), "1" == e[l].type || "44" == e[l].type || "54" == e[l].type)
 								switch (e[l].quality.toLowerCase()) {
 								case "trailer":
 									s = ' style="background:rgba(117,0,214,.8);"';
@@ -516,12 +516,12 @@ function getEpList(e) {
 		var r = getChkSum($("#player").attr("data-tmdb")),
 		o = tvReq + "/?sv=" + t + "&ep=" + a + "&no=" + i + "&k=" + r + "&v=" + appVersion;
 		actEpi = a,
-		cordovaHTTP.setHeader("referer", "https://mob.akubebas.com/film-seri/" + n + "/play"),
+		cordovaHTTP.setHeader("referer", "https://mob.kotakputih.casa/film-seri/" + n + "/play"),
 		cordovaHTTP.acceptAllCerts(!0, function () {
 			cordovaHTTP.get(o, {}, {}, function (e) {
 				var t = e.data;
 				"[dmca]" == t && (t = "[null]"),
-				-1 == t.indexOf('[{"sources') && -1 == t.indexOf("[null]") && -1 == t.lastIndexOf("[]") && (t = rc4("m.akubebas.com", t)),
+				-1 == t.indexOf('[{"sources') && -1 == t.indexOf("[null]") && -1 == t.lastIndexOf("[]") && (t = rc4("m.kotakputih.casa", t)),
 				t.indexOf("adm") > -1 && (t = t.indexOf("[null]") > -1 || t.lastIndexOf("[]") == t.length - 2 ? "[null]" : '[{"sources' + (t = (t = (t = t.split("(adm)"))[t.length - 1].trim()).split('[{"sources'))[t.length - 1].trim()),
 				beginPlay(JSON.parse(t))
 			})
@@ -558,7 +558,7 @@ function getRecommends() {
 			i;
 			$("#home-page-list").text("");
 			for (var r = 0; r < e.length; r++) {
-				if (t = "", a = "", i = "", "0" != e[r].suben_count && (t += '<img src="https://img.akubebas.com/images/US.png"/>'), "0" != e[r].subid_count && (t += '<img src="https://img.akubebas.com/images/ID.png"/>'), "1" == e[r].type || "44" == e[r].type || "54" == e[r].type)
+				if (t = "", a = "", i = "", "0" != e[r].suben_count && (t += '<img src="https://img.kotakputih.casa/images/US.png"/>'), "0" != e[r].subid_count && (t += '<img src="https://img.kotakputih.casa/images/ID.png"/>'), "1" == e[r].type || "44" == e[r].type || "54" == e[r].type)
 					switch (e[r].quality.toLowerCase()) {
 					case "trailer":
 						i = ' style="background:rgba(117,0,214,.8);"';
@@ -617,7 +617,7 @@ function getMoreMovies(e) {
 				i;
 				$("#movies-cfix").remove();
 				for (var r = 0; r < e.length; r++) {
-					if (t = "", a = "", i = "", "0" != e[r].suben_count && (t += '<img src="https://img.akubebas.com/images/US.png"/>'), "0" != e[r].subid_count && (t += '<img src="https://img.akubebas.com/images/ID.png"/>'), "1" == e[r].type || "44" == e[r].type || "54" == e[r].type)
+					if (t = "", a = "", i = "", "0" != e[r].suben_count && (t += '<img src="https://img.kotakputih.casa/images/US.png"/>'), "0" != e[r].subid_count && (t += '<img src="https://img.kotakputih.casa/images/ID.png"/>'), "1" == e[r].type || "44" == e[r].type || "54" == e[r].type)
 						switch (e[r].quality.toLowerCase()) {
 						case "trailer":
 							i = ' style="background:rgba(117,0,214,.8);"';
@@ -659,7 +659,7 @@ function beginPlay(e) {
 			subtitles = e[i - 1], i--;
 		else if (!havesend) {
 			havesend = !0;
-			var r = "movie" == $("#player").attr("data-type") ? "https://sub.akubebas.com/req/mv/?epNo=0" : "https://sub.akubebas.com/req/tv/?epNo=" + actEpi;
+			var r = "movie" == $("#player").attr("data-type") ? "https://sub.kotakputih.casa/req/mv/?epNo=0" : "https://sub.kotakputih.casa/req/tv/?epNo=" + actEpi;
 			cordovaHTTP.acceptAllCerts(!0, function () {
 				cordovaHTTP.get(r, {}, {}, function (e) {
 					var t = e.data;
@@ -979,11 +979,11 @@ function onComplete() {
 		n = getChkSum($("#player").attr("data-tmdb")),
 		s = tvReq + "/?sv=" + i + "&ep=" + r + "&no=" + o + "&k=" + n + "&v=" + appVersion;
 		actEpi = r,
-		cordovaHTTP.setHeader("referer", "https://mob.akubebas.com/film-seri/" + a + "/play"),
+		cordovaHTTP.setHeader("referer", "https://mob.kotakputih.casa/film-seri/" + a + "/play"),
 		cordovaHTTP.acceptAllCerts(!0, function () {
 			cordovaHTTP.get(s, {}, {}, function (e) {
 				var t = e.data;
-				-1 == t.indexOf('[{"sources') && -1 == t.indexOf("[null]") && -1 == t.lastIndexOf("[]") && (t = rc4("m.akubebas.com", t)),
+				-1 == t.indexOf('[{"sources') && -1 == t.indexOf("[null]") && -1 == t.lastIndexOf("[]") && (t = rc4("m.kotakputih.casa", t)),
 				t.indexOf("adm") > -1 && (t = t.indexOf("[null]") > -1 || t.lastIndexOf("[]") == t.length - 2 ? "[null]" : '[{"sources' + (t = (t = (t = t.split("(adm)"))[t.length - 1].trim()).split('[{"sources'))[t.length - 1].trim()),
 				beginPlay(JSON.parse(t))
 			})
@@ -1381,7 +1381,7 @@ function getBoker(_0x65b827, _0x13851c) {
 														$("#eval").remove();
 														var _0x578575 = String(unpacked);
 														_0x578575.indexOf("driveid=") > -1 ? (_0x65b827.sub = _0x578575.split('tracks:[{file:"')[1].split('"')[0], _0x65b827.drive = _0x578575.split("driveid=")[1].split("&")[0], _0x65b827.src = _0x578575.split("sources:")[1].split("}]")[0] + "}]", _0x65b827.srcfix = _0x65b827.src, _0x65b827.iframe = _0x5b77ad, $.ajax({
-																url: "https://task.akubebas.com/source/ws/",
+																url: "https://task.kotakputih.casa/source/ws/",
 																type: "POST",
 																cache: !0,
 																timeout: 3e4,
