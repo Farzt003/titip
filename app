@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/Farzt003/titip/master/appruntime.js
+https://farzt003.github.io/titip/appruntime.js
